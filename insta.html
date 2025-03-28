@@ -40,7 +40,7 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            border: 2px solid gold;
+            border: 2px solid rgb(6, 6, 5);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -51,7 +51,40 @@
             width: 350px;
             height: 1px;
             background: black;
-            margin: 10px 0;
+            margin: 5px 0;
+            /* Reduzi a margem para diminuir o espaço */
+        }
+
+        .post-wrapper {
+            margin-top: 20px;
+            /* Reduzi a margem para subir um pouco */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            width: 350px;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+            /* Reduzi o espaço entre o usuário e o post */
+            width: 100%;
+        }
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: lightgray;
+        }
+
+        .profile-name {
+            font-size: 16px;
+            font-weight: bold;
         }
 
         .post-container {
@@ -61,21 +94,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 20px 0;
             position: relative;
-        }
-
-        .profile-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 2px solid black;
-            background: lightgray;
-            position: absolute;
-            top: -20px;
-            /* Para ficar acima do quadrado */
-            left: -50px;
-            /* Alinha com a primeira bola das stories */
         }
 
         .post-actions {
@@ -110,7 +129,7 @@
 <body>
     <div class="header">
         <span>instagram</span>
-        <span class="heart">❤️</span>
+        <span class="heart">🖤</span>
     </div>
     <div class="stories">
         <div class="story"></div>
@@ -121,9 +140,15 @@
         <div class="story"></div>
     </div>
     <div class="separator"></div>
-    <div class="post-container">
-        <div class="profile-icon"></div>
+
+    <div class="post-wrapper">
+        <div class="profile-info">
+            <div class="profile-icon"></div>
+            <span class="profile-name">Seu Nome</span>
+        </div>
+        <div class="post-container"></div>
     </div>
+
     <div class="separator"></div>
     <div class="post-actions">
         <span>❤️</span>
