@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
             height: 100vh;
             background: white;
         }
+
         .header {
             width: 350px;
             display: flex;
@@ -22,15 +24,18 @@
             font-size: 24px;
             font-weight: bold;
         }
+
         .header .heart {
             font-size: 24px;
             color: black;
         }
+
         .stories {
             display: flex;
             gap: 10px;
             margin: 15px 0;
         }
+
         .story {
             width: 60px;
             height: 60px;
@@ -41,16 +46,14 @@
             justify-content: center;
             background: lightgray;
         }
-        .story.small {
-            width: 30px;
-            height: 30px;
-        }
+
         .separator {
             width: 350px;
             height: 1px;
             background: black;
             margin: 10px 0;
         }
+
         .post-container {
             width: 300px;
             height: 300px;
@@ -59,17 +62,34 @@
             align-items: center;
             justify-content: center;
             margin: 20px 0;
+            position: relative;
         }
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: lightgray;
+            position: absolute;
+            top: -20px;
+            /* Para ficar acima do quadrado */
+            left: -50px;
+            /* Alinha com a primeira bola das stories */
+        }
+
         .post-actions {
             width: 350px;
             display: flex;
             justify-content: space-between;
             margin: 15px 0;
         }
+
         .post-actions span {
             font-size: 24px;
             color: black;
         }
+
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -79,12 +99,14 @@
             background: white;
             padding: 10px 0;
         }
+
         .navbar span {
             font-size: 28px;
             color: black;
         }
     </style>
 </head>
+
 <body>
     <div class="header">
         <span>instagram</span>
@@ -95,10 +117,13 @@
         <div class="story"></div>
         <div class="story"></div>
         <div class="story"></div>
-        <div class="story small"></div>
+        <div class="story"></div>
+        <div class="story"></div>
     </div>
     <div class="separator"></div>
-    <div class="post-container"></div>
+    <div class="post-container">
+        <div class="profile-icon"></div>
+    </div>
     <div class="separator"></div>
     <div class="post-actions">
         <span>❤️</span>
@@ -115,4 +140,5 @@
         <span>👤</span>
     </div>
 </body>
+
 </html>
