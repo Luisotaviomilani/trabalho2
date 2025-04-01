@@ -1,134 +1,384 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> INSTAGRAM </title>
+<html lang="PT-BR"><head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="">
+    <script src="jquery.js"></script>
+    <script>
+
+    </script>
     <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: white;
+        .site {
+            width: 1000px;
+            height: 700px;
+            background-color: rgb(25, 11, 78);
+            margin-left: 250px;
+
         }
 
-        .topo {
-            width: 350px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 22px;
+        .um {
+            width: inherit;
+            height: 30px;
+            background-color: rgba(83, 53, 6, 0.903);
+
+        }
+
+        .dois {
+            width: inherit;
+            height: 100px;
+            background-color: rgb(0, 0, 0);
+
+        }
+
+        .tres {
+            width: inherit;
+            height: 30px;
+            background-color: rgb(45, 255, 140);
+
+        }
+
+        .quatro {
+            width: inherit;
+            height: 450px;
+            background-image: url("https://www.petz.com.br/blog/wp-content/uploads/2022/01/curiosidades-sobre-leao2.jpg");
+            background-size: 100%;
+
+        }
+
+        .cinco {
+            width: inherit;
+            height: 30px;
+            background-color: rgb(20, 94, 65);
+
+        }
+
+        .seis {
+            width: inherit;
+            height: 30px;
+            background-color: rgb(161, 125, 128);
+
+        }
+
+        .sete {
+            width: inherit;
+            height: 30px;
+            background-color: rgb(223, 126, 0);
+
+        }
+
+        .um1 {
+            width: 20%;
+            height: inherit;
+            background-color: rgba(161, 223, 125, 0.357);
+            display: inline-block;
+            float: left;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+
+        }
+
+        .um2 {
+            width: 5%;
+            height: inherit;
+            background-color: rgba(173, 0, 23, 0.558);
+            display: inline-block;
+            float: right;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
             font-weight: bold;
         }
 
-        .stories {
-            display: flex;
-            gap: 5px;
-            margin: 10px 0;
-        }
-
-        .bolinha {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: 2px solid black;
-            background: gray;
-        }
-
-        .linha {
-            width: 350px;
-            height: 1px;
-            background: black;
-        }
-
-        .post {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 350px;
-        }
-
-        .perfil {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            width: 100%;
-        }
-
-        .foto {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            border: 2px solid black;
-            background: gray;
-        }
-
-        .nome {
-            font-size: 14px;
+        .um3 {
+            width: 5%;
+            height: inherit;
+            background-color: rgba(134, 231, 255, 0.558);
+            display: inline-block;
+            float: right;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
             font-weight: bold;
         }
 
-        .imagem {
-            width: 290px;
-            height: 290px;
-            border: 2px solid black;
-            background: gray;
+        .dois1 {
+
+            width: 10%;
+            height: inherit;
+            background-image: url("https://www.petz.com.br/blog/wp-content/uploads/2022/01/curiosidades-sobre-leao.jpg");
+            background-size: 90%;
+            display: inline-block;
+            float: left;
+            border-radius: 100%;
+            margin-left: 40px;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
         }
 
-        .botoes {
-            width: 350px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 22px;
+        .dois2 {
+            width: 10%;
+            height: inherit;
+            background-image: url("https://static.wikia.nocookie.net/herois/images/f/f3/19be34a9dac23230ed3d45872227cbda.jpg/revision/latest?cb=20220616145136&path-prefix=pt-br");
+            background-size: 100%;
+            display: inline-block;
+            float: left;
+            border-radius: 100%;
+            margin-left: 40px;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+
         }
 
-        .menu {
-            display: flex;
-            justify-content: space-between;
-            width: 350px;
-            position: fixed;
-            bottom: 15px;
-            background: white;
-            font-size: 26px;
+        .dois3 {
+            width: 10%;
+            height: inherit;
+            background-image: url("https://static.vecteezy.com/ti/fotos-gratis/p1/26525162-leao-animal-isolado-foto.jpg");
+            background-size: 150%;
+            display: inline-block;
+            float: left;
+            border-radius: 100%;
+            margin-left: 40px;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+
+        }
+
+        .dois4 {
+            width: 10%;
+            height: inherit;
+            background-image: url("https://veja.abril.com.br/wp-content/uploads/2019/07/blogib_o-rei-leao-2019_feat.jpg?crop=1&resize=1212,909");
+            background-size: 100%;
+            display: inline-block;
+            float: left;
+            border-radius: 100%;
+            margin-left: 40px;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+        }
+
+        .dois5 {
+            width: 10%;
+            height: inherit;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRjjPcTT5WmjMrZi5Y9v1Ff0yW5nekicgRUQ&s");
+            background-size: 150%;
+            display: inline-block;
+            float: left;
+            border-radius: 100%;
+            margin-left: 40px;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+        }
+
+        .tres1 {
+            width: 30px;
+            height: inherit;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Cy2jf8GK-D8Qi1e9lpXilpzivqIrsDGEEA&s");
+            background-size: 140%;
+            display: inline-block;
+            float: left;
+            border-radius: 100%;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+        }
+
+        .tres2 {
+            width: 20%;
+            height: inherit;
+            background-color: rgb(28, 44, 13);
+            display: inline-block;
+            float: left;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+        }
+
+        .tres3 {
+            width: 2%;
+            height: inherit;
+            background-color: rgba(48, 6, 6, 0.963);
+            display: inline-block;
+            float: right;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+        }
+
+        .cinco1 {
+            width: 5%;
+            height: inherit;
+            background-color: rgba(205, 9, 244, 0.962);
+            display: inline-block;
+            float: left;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+
+        }
+
+        .cinco2 {
+            width: 5%;
+            height: inherit;
+            background-color: rgba(27, 148, 112, 0.925);
+            display: inline-block;
+            float: left;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+
+        }
+
+        .cinco3 {
+            width: 5%;
+            height: inherit;
+            background-color: rgba(60, 66, 148, 0.937);
+            display: inline-block;
+            float: left;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+        }
+
+        .cinco4 {
+            width: 5%;
+            height: inherit;
+            background-color: rgba(136, 255, 0, 0.888);
+            display: inline-block;
+            float: right;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+
+        }
+
+        .sete1 {
+            width: 20%;
+            height: inherit;
+            background-color: rgba(179, 23, 62, 0.558);
+            display: inline-block;
+            float: right;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+
+        }
+
+        .sete2 {
+            width: 20%;
+            height: inherit;
+            background-color: rgb(255, 0, 0);
+            display: inline-block;
+            float: right;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+
+        }
+
+        .sete3 {
+            width: 20%;
+            height: inherit;
+            background-color: rgb(229, 255, 0);
+            display: inline-block;
+            float: right;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+
+        }
+
+        .sete4 {
+            width: 20%;
+            height: inherit;
+            background-color: rgba(0, 255, 115, 0.895);
+            display: inline-block;
+            float: right;
+            color: black;
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+
+        }
+
+        .sete5 {
+            width: 20%;
+            height: inherit;
+            background-color: rgba(255, 0, 140, 0.927);
+            display: inline-block;
+            float: right;
+            color: rgb(0, 0, 0);
+            font-size: 13px;
+            font-family: arial;
+            font-weight: bold;
+
         }
     </style>
 </head>
+
 <body>
-    <div class="topo">
-        <span>instagram</span>
-        <span>🖤</span>
-    </div>
-    <div class="stories">
-        <div class="bolinha"></div>
-        <div class="bolinha"></div>
-        <div class="bolinha"></div>
-        <div class="bolinha"></div>
-    </div>
-    <div class="linha"></div>
+    <div class="site">
+        <div class="um">
+            <div class="um1"> INSTAGRAM</div>
+            <div class="um2">⊗ </div>
+            <div class="um3">♥ </div>
 
-    <div class="post">
-        <div class="perfil">
-            <div class="foto"></div>
-            <span class="nome">@luiss.pw</span>
         </div>
-        <div class="imagem"></div>
+        <div class="dois">
+            <div class="dois1"></div>
+            <div class="dois2"></div>
+            <div class="dois3"></div>
+            <div class="dois4"></div>
+            <div class="dois5"></div>
+        </div>
+
+        <div class="tres">
+            <div class="tres1"></div>
+            <div class="tres2"></div>
+            <div class="tres3"></div>
+        </div>
+
+        <div class="quatro"></div>
+
+        <div class="cinco">
+            <div class="cinco1">♡ </div>
+            <div class="cinco2"></div>
+            <div class="cinco3">⊗</div>
+            <div class="cinco4">∏</div>
+        </div>
+
+        <div class="seis">
+
+        </div>
+
+        <div class="sete">
+            <div class="sete1"></div>
+            <div class="sete2"></div>
+            <div class="sete3"></div>
+            <div class="sete4"></div>
+            <div class="sete5"></div>
+        </div>
+
     </div>
 
-    <div class="linha"></div>
-    <div class="botoes">
-        <span>❤️</span>
-        <span>💬</span>
-        <span>📩</span>
-        <span>🔖</span>
-    </div>
-    <div class="linha"></div>
-    <div class="menu">
-        <span>🏠</span>
-        <span>🔍</span>
-        <span>➕</span>
-        <span>▶️</span>
-        <span>👤</span>
-    </div>
-</body>
-</html>
+
+</body></html>
