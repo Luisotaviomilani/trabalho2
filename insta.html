@@ -1,163 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram UI</title>
+    <title> INSTAGRAM </title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
             background: white;
         }
 
-        .header {
+        .topo {
             width: 350px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
-        }
-
-        .header .heart {
-            font-size: 24px;
-            color: black;
         }
 
         .stories {
             display: flex;
-            gap: 10px;
-            margin: 15px 0;
+            gap: 5px;
+            margin: 10px 0;
         }
 
-        .story {
-            width: 60px;
-            height: 60px;
+        .bolinha {
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
-            border: 2px solid rgb(6, 6, 5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: lightgray;
+            border: 2px solid black;
+            background: gray;
         }
 
-        .separator {
+        .linha {
             width: 350px;
             height: 1px;
             background: black;
-            margin: 5px 0;
-            /* Reduzi a margem para diminuir o espaço */
         }
 
-        .post-wrapper {
-            margin-top: 20px;
-            /* Reduzi a margem para subir um pouco */
+        .post {
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: relative;
             width: 350px;
         }
 
-        .profile-info {
+        .perfil {
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 5px;
-            /* Reduzi o espaço entre o usuário e o post */
+            gap: 5px;
             width: 100%;
         }
 
-        .profile-icon {
-            width: 40px;
-            height: 40px;
+        .foto {
+            width: 35px;
+            height: 35px;
             border-radius: 50%;
             border: 2px solid black;
-            background: lightgray;
+            background: gray;
         }
 
-        .profile-name {
-            font-size: 16px;
+        .nome {
+            font-size: 14px;
             font-weight: bold;
         }
 
-        .post-container {
-            width: 300px;
-            height: 300px;
+        .imagem {
+            width: 290px;
+            height: 290px;
             border: 2px solid black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
+            background: gray;
         }
 
-        .post-actions {
+        .botoes {
             width: 350px;
             display: flex;
             justify-content: space-between;
-            margin: 15px 0;
+            font-size: 22px;
         }
 
-        .post-actions span {
-            font-size: 24px;
-            color: black;
-        }
-
-        .navbar {
+        .menu {
             display: flex;
             justify-content: space-between;
             width: 350px;
             position: fixed;
-            bottom: 20px;
+            bottom: 15px;
             background: white;
-            padding: 10px 0;
-        }
-
-        .navbar span {
-            font-size: 28px;
-            color: black;
+            font-size: 26px;
         }
     </style>
 </head>
-
 <body>
-    <div class="header">
+    <div class="topo">
         <span>instagram</span>
-        <span class="heart">🖤</span>
+        <span>🖤</span>
     </div>
     <div class="stories">
-        <div class="story"></div>
-        <div class="story"></div>
-        <div class="story"></div>
-        <div class="story"></div>
-        <div class="story"></div>
-        <div class="story"></div>
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
+        <div class="bolinha"></div>
     </div>
-    <div class="separator"></div>
+    <div class="linha"></div>
 
-    <div class="post-wrapper">
-        <div class="profile-info">
-            <div class="profile-icon"></div>
-            <span class="profile-name">@Luiss.pw</span>
+    <div class="post">
+        <div class="perfil">
+            <div class="foto"></div>
+            <span class="nome">@luiss.pw</span>
         </div>
-        <div class="post-container"></div>
+        <div class="imagem"></div>
     </div>
 
-    <div class="separator"></div>
-    <div class="post-actions">
+    <div class="linha"></div>
+    <div class="botoes">
         <span>❤️</span>
         <span>💬</span>
         <span>📩</span>
         <span>🔖</span>
     </div>
-    <div class="separator"></div>
-    <div class="navbar">
+    <div class="linha"></div>
+    <div class="menu">
         <span>🏠</span>
         <span>🔍</span>
         <span>➕</span>
@@ -165,5 +131,4 @@
         <span>👤</span>
     </div>
 </body>
-
 </html>
